@@ -43,8 +43,8 @@ const registerUser = asyncHandler(async (req, res) => {
   }
 });
 
-// @desc		Get user data
-// @route		GET /api/users/me
+// @desc		Authenticate user
+// @route		GET /api/users/login
 // @access	Public
 const loginUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
@@ -69,9 +69,9 @@ const loginUser = asyncHandler(async (req, res) => {
   }
 });
 
-// @desc		Authenticate user
-// @route		GET /api/users/login
-// @access	Public
+// @desc		Get user data
+// @route		GET /api/users/me
+// @access	Private
 const getMe = asyncHandler(async (req, res) => {
   res.json({
     message: "Current user data",
