@@ -1,21 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
+  * {
+    @apply font-inter;
+  }
+
   .containers {
     @apply px-10;
   }
 
+  .main-wrapper > .containers {
+    @apply py-10;
+  }
+
   header {
-    @apply flex justify-between py-2;
+    @apply bg-white py-4 shadow-gray-200/70 shadow-md;
+
+    .containers {
+      @apply flex justify-between;
+    }
 
     ul {
-      @apply flex gap-2;
+      @apply flex gap-4;
     }
 
     ul li a {
       @apply flex items-center gap-1;
+    }
+  }
+
+  #register {
+    @apply flex flex-col justify-center items-center;
+
+    .heading {
+      @apply w-2/5 text-center mb-3;
+
+      h2 {
+        @apply flex justify-center items-center gap-2 text-2xl font-bold mb-1;
+      }
+    }
+
+    .form {
+      @apply w-2/5;
+
+      form {
+        @apply flex flex-col gap-3;
+      }
+
+      input {
+        @apply w-full px-3 py-2 rounded-sm border border-neutral-400;
+      }
+
+      button {
+        @apply bg-gray-900 text-white rounded-sm py-2 tracking-wider;
+
+        &:hover {
+          @apply bg-gray-800;
+        }
+      }
     }
   }
 }
