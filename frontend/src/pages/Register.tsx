@@ -28,7 +28,7 @@ function Register() {
         <h2>
           <FaUser /> Register
         </h2>
-        <p>Please create an account</p>
+        <p>Create your account</p>
       </section>
 
       <section className="form">
@@ -69,7 +69,7 @@ function Register() {
             onChange={onChange}
           />
 
-          <button type="submit">Submit</button>
+          <button type="submit">REGISTER</button>
         </form>
       </section>
     </div>

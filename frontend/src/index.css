@@ -45,7 +45,7 @@
     }
 
     .form {
-      @apply w-full md:w-3/5 lg:w-2/5;
+      @apply w-full md:w-96;
 
       form {
         @apply flex flex-col gap-3;
