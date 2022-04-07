@@ -21,6 +21,7 @@
     "react-redux": "^7.2.8"
   },
   "devDependencies": {
+    "concurrently": "^7.1.0",
     "nodemon": "^2.0.15"
   }
 }
