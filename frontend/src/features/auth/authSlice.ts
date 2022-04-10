@@ -12,10 +12,16 @@ const initialState = {
   message: "",
 };
 
+interface User {
+  name: string;
+  email: string;
+  password: string;
+}
+
 // Register user
 export const register = createAsyncThunk(
   "auth/register",
-  async (user, thunkAPI) => {
+  async (user: User, thunkAPI) => {
     try {
       return await authService.register(user);
     } catch (error) {
