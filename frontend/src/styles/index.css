@@ -33,7 +33,7 @@
     }
   }
 
-  #register {
+  #form {
     @apply flex flex-col justify-center items-center;
 
     .heading {
@@ -43,24 +43,24 @@
         @apply flex justify-center items-center gap-2 text-2xl font-bold mb-1;
       }
     }
+  }
 
-    .form {
-      @apply w-full md:w-96;
+  .form {
+    @apply w-full md:w-96;
 
-      form {
-        @apply flex flex-col gap-3;
-      }
+    form {
+      @apply flex flex-col gap-3;
+    }
 
-      input {
-        @apply w-full px-3 py-2 rounded-sm border border-neutral-400;
-      }
+    input {
+      @apply w-full px-3 py-2 rounded-sm border border-neutral-400;
+    }
 
-      button {
-        @apply bg-gray-900 text-white rounded-sm py-2 tracking-wider;
+    button {
+      @apply bg-gray-900 text-white rounded-sm py-2 tracking-wider;
 
-        &:hover {
-          @apply bg-gray-800;
-        }
+      &:hover {
+        @apply bg-gray-800;
       }
     }
   }
@@ -70,6 +70,20 @@
 
     &:hover {
       @apply bg-gray-800;
+    }
+  }
+
+  #dashboard {
+    .heading {
+      @apply text-center;
+
+      h1 {
+        @apply text-3xl font-bold;
+      }
+
+      p {
+        @apply text-xl font-bold text-gray-600 py-4;
+      }
     }
   }
 }
