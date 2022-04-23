@@ -15,7 +15,7 @@ function GoalForm() {
   };
 
   return (
-    <div className="containers" id="form">
+    <div id="form">
       <section className="form">
         <form onSubmit={onSubmit}>
           <label htmlFor="text">Goal</label>

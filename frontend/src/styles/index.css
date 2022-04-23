@@ -85,6 +85,22 @@
         @apply text-xl font-bold text-gray-600 py-4;
       }
     }
+
+    .content {
+      @apply my-6;
+
+      .goals {
+        @apply grid md:grid-cols-4 gap-2 md:gap-4 text-center;
+
+        .goal {
+          @apply bg-gray-100 p-6;
+
+          h2 {
+            @apply font-bold text-xl mt-2;
+          }
+        }
+      }
+    }
   }
 }
 
