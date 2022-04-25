@@ -89,14 +89,22 @@
     .content {
       @apply my-6;
 
+      h3 {
+        @apply text-center font-bold;
+      }
+
       .goals {
-        @apply grid md:grid-cols-4 gap-2 md:gap-4 text-center;
+        @apply grid md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 text-center;
 
         .goal {
-          @apply bg-gray-100 p-6;
+          @apply bg-gray-100 p-6 relative;
 
           h2 {
             @apply font-bold text-xl mt-2;
+          }
+
+          .close {
+            @apply text-xl absolute top-1 right-1;
           }
         }
       }
