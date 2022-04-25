@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { deleteGoal } from "../features/goals/goalSlice";
-import { AiOutlineClose } from "react-icons/ai";
+import { HiOutlineX } from "react-icons/hi";
 
 function GoalItem({ goal }) {
   const dispatch = useDispatch();
@@ -10,7 +10,7 @@ function GoalItem({ goal }) {
       <div>{new Date(goal.createdAt).toLocaleString("en-us")}</div>
       <h2>{goal.text}</h2>
       <button onClick={() => dispatch(deleteGoal(goal._id))} className="close">
-        <AiOutlineClose />
+        <HiOutlineX />
       </button>
     </div>
   );
